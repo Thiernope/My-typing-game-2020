@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My typing game 2020 </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Font-awasome/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <h1>My typing game 2020</h1>
+    </div>
+
+    <div class="levels">
+    <label for="easy"> 
+        <input class="level" id="5" onclick="easy()" type="radio" name="selection" selected>Easy
+    </label>
+    <label for="medium"> 
+        <input class="level" id="3" onclick="medium()" type="radio" name="selection">Medium
+    </label>
+    <label for="difficult"> 
+        <input class="level" id="2" onclick="difficult() "type="radio" name="selection">Difficult
+    </label>
+</div>
+    <div class="paragraph">
+        
+        <p>Type the word you see within <span id="seconds">5</span> seconds</p>
+    </div>
+    <div class="pop-up-word">
+        <div><h1 id="current-word"></h1></div>
+       
+    </div>
+    <div>
+        <input type="text" autofocus id="word-input">
+    </div>
+    
+    <div class="timeMap">
+        <div> <span id="left-time">0</span></div>
+        <div class="message-container">
+        <div id="message-prime">Type please...</div>
+        <div id="message"></div>
+    </div>
+        <div >Your score: <span id="score">0</span></div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

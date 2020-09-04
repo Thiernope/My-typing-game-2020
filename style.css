@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color: rgb(39, 39, 88);;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+span{
+    color:rgb(230, 44, 44);
+    font-weight: bold;
+    font-size: 50px;
+} 
+.levels{
+padding-top: 20px;
+background-color: rgb(5, 5, 32);
+color: rgb(245, 233, 233);
+width: 100%;
+text-align: center;
+
+}
+
+label{
+    margin-right: 50px;
+    font-size: 25px;
+}
+input[type="radio"]{
+    width:20px;
+    height:20px;
+}
+
+
+
+p{
+    font-size: 25px;
+}
+
+input[type="text"]{
+    width: 500px;
+    height:40px;
+   color: rgb(5, 5, 32);
+   font-size: 20px;
+   font-weight: bold;
+   outline: none;
+   border: none;
+   text-align: center;
+}
+
+.header{
+    background-color: rgb(39, 39, 88);
+    width: 100%;
+    text-align: center;
+    color: blue;
+    min-height: 8vh;
+    color:  rgb(245, 233, 233);
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.paragraph, .pop-up-word, .message, .timeMap{
+    padding-top: 30px;
+   background-color: rgb(5, 5, 32);
+   width: 100%;
+   text-align: center; 
+   color: rgb(245, 233, 233);
+  
+}
+
+.message, .timeMap{
+    font-size: 25px;
+}
+
+.timeMap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 30px
+}
+
+.pop-up-word{
+    color: rgb(230, 44, 44);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+i{
+    margin-left: 100px;
+}
+
+i:hover{
+    color: white;
+    transform: rotate(45%)
+}
+
+
+
+#message{
+    font-size: 50px;
+    color:rgb(230, 44, 44);
+   
+}
+
+.message-container{
+    display: flex;
+    flex-direction: column;
+}
+@media all and (max-width: 600px){
+    input[type="text"]{
+        width: 100%;
+    }
+    
+    .container{
+        width: 100%;
+    }
+    }
+
+@media all and (max-width: 400px){
+input[type="text"]{
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+}
+
+.message, .timeMap, label, p{
+    font-size: 20px;
+}
+
+}
